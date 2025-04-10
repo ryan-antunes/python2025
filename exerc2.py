@@ -1,17 +1,18 @@
 num = 0
 soma = 0
-boletim = []
+boletim = {}
 nome = []
 media = []
 materia = []
 desem_aluno = []
+materias = ["Portugues", "Matematica", "Geografia", "Ciencias", "Artes"]
 
 while(True):
    
     nome = (input(f"Digite o nome {num+1}º alunos: "))
     for m in range(1,6):
         nota=[]
-        materia =(input(f"Digite a {m} materia: "))
+        materia = materias[m-1]
         
         for b in range(1,5):
              print(f"BIMESTRE {b}")
